@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telugu Speech to English Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Telugu Speech to English</h1>
+        <p>Click the mic and start speaking in Telugu...</p>
+        
+        <div class="controls">
+            <button id="start-btn">🎤 Start Listening</button>
+            <button id="stop-btn" disabled>🛑 Stop</button>
+        </div>
+
+        <div class="output-boxes">
+            <div class="box">
+                <h3>Telugu (Recognized)</h3>
+                <textarea id="telugu-text" placeholder="Your Telugu speech will appear here..." readonly></textarea>
+            </div>
+            <div class="box">
+                <h3>English (Translated)</h3>
+                <textarea id="english-text" placeholder="English translation will appear here..." readonly></textarea>
+            </div>
+        </div>
+        <p id="status"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
